@@ -7,7 +7,7 @@ import Organization from './views/Organization.vue'
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: process.env.HISTORY_MODE === "false" ? "" : "history",
   routes: [
     {
       path: '/',
