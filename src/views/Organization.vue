@@ -171,6 +171,7 @@
           })
           .catch((error) => {
             if (error) {
+              console.log(error, this.$route);
               alert("Lo sentimos. No existe esa organización");
               this.$router.push("/");
             }
@@ -200,7 +201,7 @@
           })
           .catch((error) => {
             if (error ) {
-              console.log(error);
+              console.log(error, this.$route);
               alert("Lo sentimos. No existe esa organización");
               this.$router.push("/");
             }
