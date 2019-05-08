@@ -147,6 +147,7 @@
     },
 
     mounted() {
+      console.log(process.env);
       this.axios
           .get(`https://api.brigada.mx/api/organizations/${this.$route.params.id}/`)
           .then((response) => {
