@@ -200,6 +200,7 @@
           })
           .catch((error) => {
             if (error ) {
+              console.log(error);
               alert("Lo sentimos. No existe esa organización");
               this.$router.push("/");
             }
