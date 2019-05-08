@@ -147,7 +147,6 @@
     },
 
     mounted() {
-      console.log(process.env);
       this.axios
           .get(`https://api.brigada.mx/api/organizations/${this.$route.params.id}/`)
           .then((response) => {
@@ -172,7 +171,6 @@
           })
           .catch((error) => {
             if (error) {
-              console.log(error, this.$route);
               alert("Lo sentimos. No existe esa organización");
               this.$router.push("/");
             }
@@ -202,7 +200,6 @@
           })
           .catch((error) => {
             if (error ) {
-              console.log(error, this.$route);
               alert("Lo sentimos. No existe esa organización");
               this.$router.push("/");
             }
